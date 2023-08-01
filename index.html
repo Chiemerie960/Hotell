@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+      integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+    "
+      defer
+    ></script>
+    <script defer src="./index.js"></script>
+    <title>Hotell</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <h1>Hotell.</h1>
+        </div>
+        <div class="hamburger active-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="list__link">
+          <li class="link active">Home</li>
+          <li class="link">Destination</li>
+          <li class="link">Services</li>
+          <li class="link">About</li>
+          <li class="link">Contact</li>
+        </ul>
+        <div class="contact__link">
+          <div class="contakt">
+            <div class="phone-cont">
+              <img src="./phone.svg" alt="">
+            </div>
+            <h3 class="number">123-468-0984</h3>
+          </div>
+        </div>
+      </nav>
+      <div class="landing">
+        <div class="">
+          <h1>Once a while go someplace you've never been before.</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="form-container">
+        <div class="book__form">
+          <form>
+            <input
+              type="text"
+              placeholder="Date Arrival"
+              onfocus="(this.type='date')"
+              onblur="if(this.value==''){this.type='text'}"
+            />
+            <input
+              type="text"
+              placeholder="Date Departure"
+              onfocus="(this.type='date')"
+              onblur="if(this.value==''){this.type='text'}"
+            />
+            <select name="select" id="select">
+              <option value="none"># of persons</option>
+              <option value="none">1</option>
+              <option value="none">2</option>
+              <option value="none">3</option>
+              <option value="none">4</option>
+              <option value="none">5+</option>
+            </select>
+            <button>Find now</button>
+          </form>
+        </div>
+      </div>
+      <section class="service">
+        <h2 class="srv-h2 h2">Our Services</h2>
+        <div class="cards">
+          <div class="card1 card">
+            <img src="./images/recr.svg" alt="" />
+            <div class="cardtxt">
+              <h2>Entertainment</h2>
+              <p>
+                Indulge in unforgettable entertainment at our hotel, where captivating performances and lively events create the perfect ambiance for an enchanting stay.
+              </p>
+            </div>
+            <a href="#">LEARN MORE</a>
+          </div>
+          <div class="card2 card">
+            <img src="./images/suite.svg" />
+            <div class="cardtxt">
+              <h2>Accommodation</h2>
+              <p>
+                Hotels offer comfortable rooms or suites for guests to stay in,
+                with various options such as double rooms, executive suites,
+                etc. Luxurious relaxation and rejuvenation through personalized
+                treatments and amenities offered in a hotel setting.
+              </p>
+            </div>
+            <a href="#">LEARN MORE</a>
+          </div>
+          <div class="card3 card">
+            <img src="./images/spa.svg" />
+            <div class="cardtxt">
+              <h2>Serenity Retreat</h2>
+              <p>
+                Escape to tranquility at Serenity Retreat, a blissful haven nestled amidst breathtaking landscapes. Experience unparalleled luxury and rejuvenation with our world-class hotel services and immerse yourself in serenity like never before.
+              </p>
+            </div>
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-container">
+          <div class="abt-cont">
+            <div class="about-img-container">
+              <div class="">
+                <img
+                  src="./images/bg-image.png"
+                  alt="Image"
+                  class="img-fluid img-box-shadow"
+                />
+              </div>
+            </div>
+            <div class="about-text">
+              <h2 class="abt_txt_heading h2">About Hotell</h2>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in Bookmarksgrove right at the coast of the Semantics,
+                a large language ocean.
+              </p>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial">
+        <div class="container">
+          <div class="head">
+            <h2 class="h2">testimonial</h2>
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth.
+            </p>
+          </div>
+          <div class="my-16 gap-8 flex justify-center flex-row min-w-full flex-wrap">
+            <div class="bg-white p-10 w-72 flex flex-col justify-evenly">
+              <blockquote>
+                <p class="font-bold text-lg">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia. It is a paradisematic country,
+                  in which roasted parts of sentences fly into your mouth.
+                </p>
+              </blockquote>
+              <div class="flex items-center gap-8">
+                <div class="img overflow-hidden rounded-full w-24">
+                  <img src="./images/person_1.jpg" alt="" />
+                </div>
+                <div class="text flex flex-col">
+                  <strong class="font-bold text-lg text-black">John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-10 w-72 flex flex-col justify-evenly">
+              <blockquote>
+                <p class="font-bold text-lg">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia. It is a paradisematic country,
+                  in which roasted parts of sentences fly into your mouth.
+                </p>
+              </blockquote>
+              <div class="flex items-center gap-8">
+                <div class="img overflow-hidden rounded-full w-24">
+                  <img src="./images/person_1.jpg" alt="" />
+                </div>
+                <div class="text flex flex-col">
+                  <strong class="font-bold text-lg text-black">John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-10 w-72 flex flex-col justify-evenly">
+              <blockquote>
+                <p class="font-bold text-lg">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia. It is a paradisematic country,
+                  in which roasted parts of sentences fly into your mouth.
+                </p>
+              </blockquote>
+              <div class="flex items-center gap-8">
+                <div class="img overflow-hidden rounded-full w-24">
+                  <img src="./images/person_1.jpg" alt="" />
+                </div>
+                <div class="text flex flex-col">
+                  <strong class="font-bold text-lg text-black">John Doe</strong>
+                  <span>Creative Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex flex-col py-20 px-48 min-w-full bg-custom">
+      <div class="flex w-full justify-center gap-48 bg-custom">
+        <div class="widget">
+          <h3 class="text-2xl">Home</h3>
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h3 class="text-2xl">Services</h3>
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Swimming</a></li>
+            <li><a href="#">Kayak</a></li>
+            <li><a href="#">Surfing</a></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h3 class="text-2xl">Contact</h3>
+          <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+          <ul class="list-unstyled links mb-4">
+            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+            <li>
+              <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+            </li>
+          </ul>
+          <h3 class="text-2xl">Connect</h3>
+          <ul class="list-unstyled social flex flex-row gap-2">
+            <li>
+              <a href="#"><img src="./images/instagram.svg" width="20px"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/linkedin.svg" width="20px"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/facebook.svg" width="20px"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/twitter.svg" width="20px"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="text-center">
+          <p>
+            Copyright ©2023 All rights reserved | This template is made with
+            <i class="text-red-600">❤</i> by
+            <a
+              href="https://emeriex.netlify.app/"
+              target="_blank"
+              rel="nofollow noopener"
+              >EmerieX</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <ul class="hidden-nav">
+      <img src="./close.svg" class="close" width="30px" alt="">
+      <div class="flex flex-col justify-between min-h-full items-center p-32">
+        <ul class="flex flex-col justify-between gap-7">
+          <li class="text-xl text-white cursor-pointer">Home</li>
+          <li class="text-xl text-white cursor-pointer">Destination</li>
+          <li class="text-xl text-white cursor-pointer">Services</li>
+          <li class="text-xl text-white cursor-pointer">About</li>
+          <li class="text-xl text-white cursor-pointer">Contact</li>
+        </ul>
+        <div class="contact">
+          <h3 class="text-xl text-white">123-468-0984</h3>
+          <ul class="list-unstyled social flex flex-row gap-2">
+            <li>
+              <a href="#"><img src="./images/instagram.svg" width="20px"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/linkedin.svg" width="20px"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/facebook.svg" width="20px"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/twitter.svg" width="20px"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ul>
+  </body>
+</html>
