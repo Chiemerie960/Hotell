@@ -564,4 +564,8 @@ footer {
     flex-grow: 0;
     flex-shrink: 1;
   }
+  .smalbreak {
+    display: flex;
+    flex-direction: column;
+  }
 }
