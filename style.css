@@ -391,6 +391,10 @@ blockquote p {
 footer {
   background-color: #00917c !important;
 }
+.smalbreak {
+  display: flex;
+  flex-direction: row;
+}
 .hidden-nav {
   display: none;
 }
@@ -567,5 +571,6 @@ footer {
   .smalbreak {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
   }
 }
