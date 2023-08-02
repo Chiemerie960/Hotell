@@ -394,7 +394,32 @@ footer {
 .hidden-nav {
   display: none;
 }
-
+@media only screen and (max-width: 1200px) {
+  .about {
+    height: 1000px;
+  }
+  .about-container {
+    margin: 0 auto;
+    width: 70vw;
+    /* padding: 5rem; */
+  }
+  .abt-cont {
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    min-height: 500px;
+    justify-content: space-between;
+    line-height: 21px;
+    text-size-adjust: 100%;
+    width: max-content;
+    -webkit-box-pack: justify;
+  }
+  .about-text {
+    margin-top: 10rem;
+  }
+}
 @media only screen and (max-width: 992px) {
   .nav {
     padding: 3rem 1rem;
@@ -486,7 +511,7 @@ footer {
   }
   .cards {
     margin-bottom: -100px;
-    min-width: 720px;
+    /* min-width: 720px; */
     overflow: hidden;
     min-height: 460px;
   }
