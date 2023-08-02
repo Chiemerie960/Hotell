@@ -573,7 +573,4 @@ footer {
     flex-direction: column;
     gap: 2rem;
   }
-  footer div {
-    gap: 10rem;
-  }
 }
